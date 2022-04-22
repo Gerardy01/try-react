@@ -1,0 +1,52 @@
+
+.header {
+    height: fit-content;
+
+    position: fixed;
+}
+
+.header-content {
+    width: 100vw;
+    height: 7vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 10px;
+
+    background-color: rgb(209, 0, 209);
+}
+
+.ham-btn {
+    width: 40px;
+    height: 70%;
+    background-color: antiquewhite;
+}
+
+.fav-btn {
+    width: 40px;
+    height: 70%;
+    background-color: antiquewhite;
+}
+
+
+
+.nav-open {
+    height: 93vh;
+
+    background-color: black;
+    transform: translate(0px, 0px);
+
+    transition: linear height 0.1s, transform 0.3s;
+}
+
+.nav-closed {
+    height: 0px;
+    
+    overflow-y: hidden;
+    background-color: black;
+
+    transform: translate(-2000px, 0px);
+    transition: linear height 0.1s 1s, linear transform 0.5s;
+}
