@@ -35,14 +35,18 @@
 .nav-open {
     height: 93vh;
 
+    padding: 10px 40px;
+
     background-color: black;
     transform: translate(0px, 0px);
 
-    transition: linear height 0.1s, transform 0.3s;
+    transition: linear height 0.01s, transform 0.3s 0.01s;
 }
 
 .nav-closed {
     height: 0px;
+
+    padding: 10px 40px;
     
     overflow-y: hidden;
     background-color: black;
@@ -50,3 +54,40 @@
     transform: translate(-2000px, 0px);
     transition: linear height 0.1s 1s, linear transform 0.5s;
 }
+
+
+
+.nav-item {
+    height: fit-content;
+    color: white;
+    list-style: none;
+
+    border-bottom: 0.5px solid white;
+}
+
+.nav-item-header {
+    padding: 20px 0px;
+}
+
+
+
+.nav-item-item-holder-open {
+    height: 100px;
+
+    overflow-y: hidden;
+    transition: linear 0.1s;
+}
+
+.nav-item-item-holder-closed {
+    height: 0px;
+
+    overflow-y: hidden;
+    transition: linear 0.1s;
+}
+
+.nav-item-item {
+    list-style: none;
+}
+
+
+
